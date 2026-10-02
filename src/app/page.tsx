@@ -34,7 +34,7 @@ export default function Home() {
               id="goals"
               kicker="Goal of the week"
               title="The ones you show people who say they don’t like football."
-              description="A carousel of mock clips, real feelings, and far too many votes from people who were definitely watching a different match."
+              description="Press play on the real clip, then cast one vote. The Leading badge follows whichever goal the terrace is backing."
             />
             <GoalOfTheWeek />
           </div>

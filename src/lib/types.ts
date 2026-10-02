@@ -63,8 +63,17 @@ export type GoalClip = {
   opponent: string
   description: string
   votes: number
+  /** YouTube video id. Embed via youtube-nocookie.com only after the viewer presses play. */
+  youtubeId: string
   image: string
   imageAlt: string
+}
+
+export type GoalVoteStorage = "redis" | "memory"
+
+export type GoalVotesResponse = {
+  votes: Record<string, number>
+  storage: GoalVoteStorage
 }
 
 export type TerracePost = {
